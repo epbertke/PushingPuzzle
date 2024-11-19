@@ -7,6 +7,7 @@ extends CharacterBody3D
 func _unhandled_input(event: InputEvent):
 	if event is InputEventMouseMotion:
 		self.rotate_y(-event.relative.x * 0.01)
+		
 	
 func _process(delta):
 	

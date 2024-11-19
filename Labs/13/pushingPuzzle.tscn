@@ -129,7 +129,7 @@ target_position = Vector3(0, 0, 10)
 node_a = NodePath("..")
 
 [node name="CubeChecker" type="Area3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.116949)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.3117, 0, 9.98083)
 script = ExtResource("7_8hosf")
 desiredColor = "purple"
 
@@ -143,7 +143,7 @@ mesh = SubResource("PrismMesh_5qfek")
 surface_material_override/0 = ExtResource("2_tfnlb")
 
 [node name="CubeChecker2" type="Area3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4.66121)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.31448, 0, 9.95089)
 script = ExtResource("7_8hosf")
 desiredColor = "blue"
 
@@ -157,7 +157,7 @@ mesh = SubResource("PrismMesh_5qfek")
 surface_material_override/0 = SubResource("StandardMaterial3D_xjhoo")
 
 [node name="CubeChecker3" type="Area3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3.77005)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.1883, 0, 9.513)
 script = ExtResource("7_8hosf")
 desiredColor = "yellow"
 

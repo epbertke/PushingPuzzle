@@ -1,6 +1,8 @@
 res://Labs/13/pushingPuzzle.tscn
 res://colorPurple.tres
 res://colorYellow.tres
-res://Labs/13/CubeChecker.gd
-res://Labs/13/PushingPuzzleController.gd
 res://cube_checker.tscn
+res://Labs/13/MouseLook.gd
+res://Labs/13/PlayerMovement.gd
+res://Labs/13/PushingPuzzleController.gd
+res://Labs/13/CubeChecker.gd
