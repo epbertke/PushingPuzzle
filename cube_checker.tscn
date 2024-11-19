@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://dv2om6vrh2f8s"]
+
+[ext_resource type="Script" path="res://Labs/13/CubeChecker.gd" id="1_g3rsd"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tqw4v"]
+size = Vector3(3.75, 3, 3)
+
+[sub_resource type="PrismMesh" id="PrismMesh_5qfek"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mrda1"]
+albedo_color = Color(0, 0, 0, 1)
+
+[node name="CubeChecker" type="Area3D"]
+script = ExtResource("1_g3rsd")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.71081, 0.95666, -3.26251)
+shape = SubResource("BoxShape3D_tqw4v")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(3.39576, 0, 0, 0, 0.525445, 0, 0, 0, 2.31573, 6.70559, -0.204393, -3.25611)
+mesh = SubResource("PrismMesh_5qfek")
+surface_material_override/0 = SubResource("StandardMaterial3D_mrda1")
+
+[connection signal="body_shape_entered" from="." to="." method="_on_body_shape_entered"]
+[connection signal="body_shape_exited" from="." to="." method="_on_body_shape_exited"]
